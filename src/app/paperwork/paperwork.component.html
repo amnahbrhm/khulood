@@ -1,0 +1,22 @@
+<div class="main">
+    <div class="title">
+        نماذج من اوراق العمل
+    </div>
+    <div class="continer mt-6">
+        <div class="content">
+            <p class="content-title" (click)="openDialog('file1')">
+                <a href="assets/content/paperwork/file1.pdf"> مذكرة تنمية مهارات القراءة والكتابة لذوي صعوبات التعلم
+                    الجزء الأول</a>
+            </p>
+            <p class="content-title" (click)="openDialog('file2')">
+                <a href="assets/content/paperwork/file2.pdf">مشروع انطلاق كتاب الصف الأول</a>
+            </p>
+        </div>
+    </div>
+</div>
+<!-- 
+<p-dialog header="اهداف برنامج صعوبات التعلم" [(visible)]="visible" [style]="{width: '70vw'}">
+    <object [data]="'assets/content/paperwork/'+ filename+'.pdf' | safe" type="application/pdf"  height="100%">
+        <p>Alternative text - include a link <a [href]="'assets/content/paperwork/'+ filename+'.pdf' | safe">to the PDF!</a></p>
+    </object>
+</p-dialog> -->

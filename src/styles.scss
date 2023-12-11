@@ -8,42 +8,89 @@
 }
 
 @font-face {
-    font-family: "yosufb";
-    font-style: light;
-    font-weight: 200;
-    src: local("Quicksand Light"), url("assets/fonts/Beirut.ttc");
-  }
-  @font-face {
-    font-family: 'Tajawal';
-    font-style: light;
-    font-weight: 200;
-    src: local('Tajawal Extra Light'), url('assets/fonts/Tajawal/Tajawal-ExtraLight.ttf');
-  }
-  @font-face {
-    font-family: 'Tajawal';
-    font-style: light;
-    font-weight: 300;
-    src: local('Tajawal Light'), url('assets/fonts/Tajawal/Tajawal-Light.ttf');
-  }
-  @font-face {
-    font-family: 'Tajawal';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Tajawal Regular'), url('assets/fonts/Tajawal/Tajawal-Regular.ttf');
-  }
-  @font-face {
-    font-family: 'Tajawal';
-    font-style: medium;
-    font-weight: 500;
-    src: local('Tajawal Medium'), url('assets/fonts/Tajawal/Tajawal-Medium.ttf');
-  }
-  @font-face {
-    font-family: 'Tajawal';
-    font-style: bold;
-    font-weight: 600;
-    src: local('Tajawal Bold'), url('assets/fonts/Tajawal/Tajawal-Black.ttf');
-  }
+  font-family: "yosufb";
+  font-style: light;
+  font-weight: 200;
+  src: local("Quicksand Light"), url("assets/fonts/Beirut.ttc");
+}
+@font-face {
+  font-family: "Karma";
+  font-style: light;
+  font-weight: 400;
+  src: local("Karma Extra Light"),
+    url("assets/fonts/Karma/Karma-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Tajawal";
+  font-style: light;
+  font-weight: 200;
+  src: local("Tajawal Extra Light"),
+    url("assets/fonts/Tajawal/Tajawal-ExtraLight.ttf");
+}
+@font-face {
+  font-family: "Tajawal";
+  font-style: light;
+  font-weight: 300;
+  src: local("Tajawal Light"), url("assets/fonts/Tajawal/Tajawal-Light.ttf");
+}
+@font-face {
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Tajawal Regular"), url("assets/fonts/Tajawal/Tajawal-Regular.ttf");
+}
+@font-face {
+  font-family: "Tajawal";
+  font-style: medium;
+  font-weight: 500;
+  src: local("Tajawal Medium"), url("assets/fonts/Tajawal/Tajawal-Medium.ttf");
+}
+@font-face {
+  font-family: "Tajawal";
+  font-style: bold;
+  font-weight: 600;
+  src: local("Tajawal Bold"), url("assets/fonts/Tajawal/Tajawal-Black.ttf");
+}
 body {
   background-color: #f8f7f2;
   font-family: Tajawal;
+}
+
+.main {
+  margin: 50px;
+  margin-top: 100px;
+  padding: 20px;
+  direction: rtl;
+  height: 100vh;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 600;
+  .sub-title {
+    font-size: 26px;
+    font-weight: 400;
+    // font-family: yosuf;
+  }
+  .content {
+    font-size: 24px;
+    font-weight: 200;
+  }
+}
+button {
+  font-family: Tajawal;
+  border-radius: 8px;
+  color: black;
+  background-color: transparent;
+  border: black solid 0.5px;
+  padding: 0.5rem 0.9rem;
+  width: 100%;
+  &:hover {
+    background-color: #111b470c;
+  }
+  &:active {
+    background-color: #111b4769;
+    color: #fff;
+    border: none
+  }
 }
