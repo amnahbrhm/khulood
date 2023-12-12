@@ -7,6 +7,9 @@ import { ActivitiesComponent } from './activities/activities.component';
 import { SchoolxteacherComponent } from './schoolxteacher/schoolxteacher.component';
 import { NotesComponent } from './notes/notes.component';
 import { CertificationsComponent } from './certifications/certifications.component';
+import { LessonsComponent } from './lessons/lessons.component';
+import { AttendanceComponent } from './attendance/attendance.component';
+import { VisitsComponent } from './visits/visits.component';
 
 const routes: Routes = [
   {
@@ -37,10 +40,22 @@ const routes: Routes = [
     path: 'certifications',
     component: CertificationsComponent,
   },
+  {
+    path: 'lessons',
+    component: LessonsComponent,
+  },
+  {
+    path: 'attendance',
+    component: AttendanceComponent,
+  },
+  {
+    path: 'visits',
+    component: VisitsComponent,
+  },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {scrollPositionRestoration: 'enabled'})],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

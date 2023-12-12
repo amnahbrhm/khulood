@@ -52,16 +52,24 @@
   src: local("Tajawal Bold"), url("assets/fonts/Tajawal/Tajawal-Black.ttf");
 }
 body {
+  width: 80vw !important;
   background-color: #f8f7f2;
   font-family: Tajawal;
+  margin: 0;
+  padding-bottom: 20px;
+
+}
+html {
+  width: 80vw !important;
+  direction: rtl;
 }
 
 .main {
   margin: 50px;
   margin-top: 100px;
   padding: 20px;
-  direction: rtl;
   height: 100vh;
+  padding-bottom: 20px;
 }
 
 .title {

@@ -25,7 +25,7 @@
     <div class="galleria">
         <div *ngFor="let image of images">
             <div class="image" [style]="'background-color:'+ image.color" (click)="openContent(image.number)">
-                <img [style]="image.number === '01' ? 'opacity: 70%' : ''" [src]="'assets/images/dashboard/'+image.img">
+                <img [style]="image.number === '01' ||  image.number === '09'? 'opacity: 70%' : ''" [src]="'assets/images/dashboard/'+image.img">
                 <p class="title">{{image.title}}</p>
                 <p class="sub-title">
                     <span *ngFor="let string of image.subtitle">
@@ -67,6 +67,42 @@
             </li>
             <li>
                 ٥. العمل على نشر ثقافة برنامج صعوبات التعلم في المرحلة الابتدائية
+            </li>
+        </ul>
+    </span>
+</p-dialog>
+
+<p-dialog header="الاتجاه الاستراتيجي للمدرسة" [(visible)]="dialog2" [style]="{width: '70vw'}">
+    <span class="mt-6 pt-6">
+        <p style="font-weight: 500;">رؤية المدرسة:</p>
+        <p style="font-weight: 100;">إعداد جيل متميز فطن قادر على العطاء و المنافسة</p>
+        <p style="font-weight: 500;">رسالة المدرسة:</p>
+        <p style="font-weight: 100;">نحن المدرسة الابتدائية الثانية بالشقة بعون الله تعالى نسعى لتقديم تعليم بمعايير حديثة و جودة عالية و توفير
+            بيئة جاذبة محققة للشراكة المجتمعية بين الأفراد في المجتمع و العاملين في المدرسة لإعداد جيل متميز بخلقه و
+            سلوكه و عمله و قادر على المنافسة العالمية لخدمة دينه و وطنه.</p>
+        <p style="font-weight: 500;">قيم المدرسة:</p>
+        <ul style="font-weight: 100;">
+            <li>
+                ⁃ تقوى الله عزوجل في السر و العلن.
+            </li>
+            <li>
+                ⁃ بر الوالدين.
+
+            </li>
+            <li>
+                ⁃ المواطنة و الانتماء.
+
+            </li>
+            <li>
+                ⁃ التقدير و الاحترام.
+
+            </li>
+            <li>
+                ⁃ الجودة و التميز و الإبداع.
+
+            </li>
+            <li>
+                ⁃ تحمل المسؤولية و العمل الجماعي.
             </li>
         </ul>
     </span>

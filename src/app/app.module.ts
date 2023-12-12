@@ -14,6 +14,9 @@ import { ActivitiesComponent } from './activities/activities.component';
 import { SchoolxteacherComponent } from './schoolxteacher/schoolxteacher.component';
 import { NotesComponent } from './notes/notes.component';
 import { CertificationsComponent } from './certifications/certifications.component';
+import { LessonsComponent } from './lessons/lessons.component';
+import { AttendanceComponent } from './attendance/attendance.component';
+import { VisitsComponent } from './visits/visits.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +26,10 @@ import { CertificationsComponent } from './certifications/certifications.compone
     ActivitiesComponent,
     SchoolxteacherComponent,
     NotesComponent,
-    CertificationsComponent
+    CertificationsComponent,
+    LessonsComponent,
+    AttendanceComponent,
+    VisitsComponent
   ],
   imports: [
     BrowserModule,
