@@ -8,9 +8,9 @@
   align-items: center;
   justify-content: center;
 }
-
 .galleria {
   margin-top: 40px;
+  padding-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
   gap: 60px;
@@ -66,13 +66,14 @@
     bottom: -15px;
     font-size: 22px;
     // right: 15px;
-    // span {
-    // //   text-shadow: 0.5px 0 rgb(233, 233, 233), -0.5px 0 rgb(233, 233, 233),
-    // //     0 0.5px rgb(233, 233, 233), 0 -0.5px rgb(233, 233, 233),
-    // //     0.25px 0.25px rgb(233, 233, 233), -0.25px -0.25px rgb(233, 233, 233),
-    // //     0.25px -0.25px rgb(233, 233, 233), -0.25px 0.25px rgb(233, 233, 233);
-    // }
+    span {
+      text-shadow: 0.5px 0 #fff, -0.5px 0 #fff,
+        0 0.5px #fff, 0 -0.5px #fff,
+        0.25px 0.25px #fff, -0.25px -0.25px #fff,
+        0.25px -0.25px #fff, -0.25px 0.25px #fff;
+    }
   }
+
   .circle {
     position: absolute;
     left: 5px;
