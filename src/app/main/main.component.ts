@@ -137,6 +137,16 @@ export class MainComponent {
       number: '12',
       count: 120,
     },
+    {
+      img: 'image5.png',
+      color: '#E2C3E1',
+      indexColor: '#956293',
+      title: 'البيئة التعليمية',
+      // subtitle: 'توثيق التفاعل بين المدرسة والمعلمة',
+      subtitle: ['البيئة', 'التعليمية', 'لبرنامج', 'صعوبات', 'التعلم'],
+      number: '13',
+      count: 120,
+    },
   ];
   dialog1 = false;
   openContent(numberOfImage: string) {
@@ -153,6 +163,7 @@ export class MainComponent {
     if (numberOfImage === '10') this.router.navigate(['lessons']);
     if (numberOfImage === '11') this.router.navigate(['visits']);
     if (numberOfImage === '12') this.router.navigate(['community-partnership']);
+    if (numberOfImage === '13') this.router.navigate(['disabilities-program']);
   }
   downloadCv() {
     let link = document.createElement('a');
