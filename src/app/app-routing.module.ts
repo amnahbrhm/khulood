@@ -10,6 +10,7 @@ import { CertificationsComponent } from './certifications/certifications.compone
 import { LessonsComponent } from './lessons/lessons.component';
 import { AttendanceComponent } from './attendance/attendance.component';
 import { VisitsComponent } from './visits/visits.component';
+import { CommunityPartnershipComponent } from './community-partnership/community-partnership.component';
 
 const routes: Routes = [
   {
@@ -52,6 +53,11 @@ const routes: Routes = [
     path: 'visits',
     component: VisitsComponent,
   },
+    {
+    path: 'community-partnership',
+    component: CommunityPartnershipComponent,
+  },
+  
 ];
 
 @NgModule({
