@@ -27,7 +27,7 @@ export class MainComponent {
       title: 'الاستراتيجي ',
       // subtitle: 'اهداف برنامج صعوبات التعلم',
       subtitle: ['الاتجاه', ' الاستراتيجي', ' للـــــمدرســــــــة'],
-      number: '09',
+      number: '01',
       count: 120,
     },
     {
@@ -37,7 +37,7 @@ export class MainComponent {
       title: 'الأهداف ',
       // subtitle: 'اهداف برنامج صعوبات التعلم',
       subtitle: ['أهداف', ' برنــــــــامــــج', 'صعوبات التعلم'],
-      number: '01',
+      number: '02',
       count: 120,
     },
     {
@@ -47,7 +47,7 @@ export class MainComponent {
       title: 'التحضير',
       // subtitle: 'توثيق التفاعل بين المدرسة والمعلمة',
       subtitle: ['نموذج ', 'التحضير', 'اليــــومـــــي'],
-      number: '05',
+      number: '03',
       count: 120,
     },
     {
@@ -57,7 +57,7 @@ export class MainComponent {
       title: 'أوراق العمل ',
       // subtitle: 'نماذج من أوراق العمل',
       subtitle: ['نماذج ', 'من أوراق ', 'العـــــــــــمــل'],
-      number: '06',
+      number: '04',
       count: 120,
     },
     {
@@ -66,7 +66,7 @@ export class MainComponent {
       indexColor: '#F1DA07',
       title: 'الوسائل',
       subtitle: ['الوسائل', ' التـــعلـــيمـــية'],
-      number: '10',
+      number: '05',
       count: 120,
     },
     {
@@ -75,7 +75,7 @@ export class MainComponent {
       indexColor: '#685EA4',
       title: 'الدورات',
       subtitle: [],
-      number: '03',
+      number: '06',
       count: 120,
     },
     {
@@ -85,7 +85,7 @@ export class MainComponent {
       title: 'المبادرات',
       // subtitle: 'المبادرات والانشطة',
       subtitle: ['المبادرات ', 'والانشطة'],
-      number: '04',
+      number: '07',
       count: 120,
     },
     {
@@ -115,7 +115,7 @@ export class MainComponent {
       title: 'نماذج الشهادات',
       // subtitle: `نماذج شهادات الطـالـبــات`,
       subtitle: ['نماذج', ' شهادات ', 'الطـالـبــات'],
-      number: '02',
+      number: '10',
       count: 120,
     },
     {
@@ -124,7 +124,7 @@ export class MainComponent {
       indexColor: '#685EA4',
       title: 'الزيارات',
       subtitle: ['الزيارات', 'التبادلية'],
-      number: '11',
+      number: '10',
       count: 120,
     },
     {
@@ -134,7 +134,7 @@ export class MainComponent {
       title: 'الشراكة المجتمعية',
       // subtitle: 'توثيق التفاعل بين المدرسة والمعلمة',
       subtitle: ['الشراكة', 'المجتمعية'],
-      number: '12',
+      number: '11',
       count: 120,
     },
     {
@@ -144,26 +144,26 @@ export class MainComponent {
       title: 'البيئة التعليمية',
       // subtitle: 'توثيق التفاعل بين المدرسة والمعلمة',
       subtitle: ['البيئة', 'التعليمية', 'لبرنامج', 'صعوبات', 'التعلم'],
-      number: '13',
+      number: '12',
       count: 120,
     },
   ];
   dialog1 = false;
   openContent(numberOfImage: string) {
     if (numberOfImage === '00') this.downloadCv();
-    if (numberOfImage === '01') this.dialog1 = true;
-    if (numberOfImage === '02') this.router.navigate(['student-certification']);
-    if (numberOfImage === '03') this.router.navigate(['certifications']);
+    if (numberOfImage === '10') this.dialog1 = true;
+    if (numberOfImage === '09') this.router.navigate(['student-certification']);
+    if (numberOfImage === '06') this.router.navigate(['certifications']);
     if (numberOfImage === '04') this.router.navigate(['activities']);
-    if (numberOfImage === '05') this.router.navigate(['attendance']);
-    if (numberOfImage === '06') this.router.navigate(['paparwork']);
+    if (numberOfImage === '03') this.router.navigate(['attendance']);
+    if (numberOfImage === '07') this.router.navigate(['paparwork']);
     if (numberOfImage === '07') this.router.navigate(['notes']);
     if (numberOfImage === '08') this.router.navigate(['schoolxteacher']);
-    if (numberOfImage === '09') this.dialog2 = true;
-    if (numberOfImage === '10') this.router.navigate(['lessons']);
+    if (numberOfImage === '01') this.dialog2 = true;
+    if (numberOfImage === '05') this.router.navigate(['lessons']);
     if (numberOfImage === '11') this.router.navigate(['visits']);
-    if (numberOfImage === '12') this.router.navigate(['community-partnership']);
-    if (numberOfImage === '13') this.router.navigate(['disabilities-program']);
+    if (numberOfImage === '11') this.router.navigate(['community-partnership']);
+    if (numberOfImage === '12') this.router.navigate(['disabilities-program']);
   }
   downloadCv() {
     let link = document.createElement('a');
