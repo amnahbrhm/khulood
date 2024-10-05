@@ -17,6 +17,7 @@ import { CertificationsComponent } from './certifications/certifications.compone
 import { LessonsComponent } from './lessons/lessons.component';
 import { AttendanceComponent } from './attendance/attendance.component';
 import { VisitsComponent } from './visits/visits.component';
+import { BehaviorModificationComponent } from './behavior-modification/behavior-modification.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +30,8 @@ import { VisitsComponent } from './visits/visits.component';
     CertificationsComponent,
     LessonsComponent,
     AttendanceComponent,
-    VisitsComponent
+    VisitsComponent,
+    BehaviorModificationComponent
   ],
   imports: [
     BrowserModule,

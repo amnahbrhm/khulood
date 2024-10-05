@@ -12,6 +12,8 @@ import { AttendanceComponent } from './attendance/attendance.component';
 import { VisitsComponent } from './visits/visits.component';
 import { CommunityPartnershipComponent } from './community-partnership/community-partnership.component';
 import { DisabilitiesProgramComponent } from './disabilities-program/disabilities-program.component';
+import { BehaviorModificationComponent } from './behavior-modification/behavior-modification.component';
+import { TeacherDesignsComponent } from './teacher-designs/teacher-designs.component';
 
 const routes: Routes = [
   {
@@ -62,8 +64,19 @@ const routes: Routes = [
     path: 'disabilities-program',
     component: DisabilitiesProgramComponent,
   },
+  {
+    path: 'behavior-modification',
+    component: BehaviorModificationComponent,
+  },
+  {
+    path: 'teacher-designs',
+    component: TeacherDesignsComponent,
+  }
 ];
 
+// styleUrls: ['./behavior-modification.component.scss']
+// })
+// export class BehaviorModificationComponent {
 @NgModule({
   imports: [
     RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' }),

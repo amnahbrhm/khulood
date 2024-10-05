@@ -95,7 +95,7 @@ export class MainComponent {
       title: 'الملاحظات',
       // subtitle: 'ملاحظات مديرة المدرسة',
       subtitle: ['ملاحظات', ' مديرة المدرسة'],
-      number: '07',
+      number: '08',
       count: 120,
     },
     {
@@ -105,7 +105,7 @@ export class MainComponent {
       title: 'التفاعل',
       // subtitle: 'توثيق التفاعل بين المدرسة والمعلمة',
       subtitle: ['توثيق ', 'التفاعل', ' بين المدرسة ', 'والــــــــمــعـلـمـة'],
-      number: '08',
+      number: '09',
       count: 120,
     },
     {
@@ -124,7 +124,7 @@ export class MainComponent {
       indexColor: '#685EA4',
       title: 'الزيارات',
       subtitle: ['الزيارات', 'التبادلية'],
-      number: '10',
+      number: '11',
       count: 120,
     },
     {
@@ -134,7 +134,7 @@ export class MainComponent {
       title: 'الشراكة المجتمعية',
       // subtitle: 'توثيق التفاعل بين المدرسة والمعلمة',
       subtitle: ['الشراكة', 'المجتمعية'],
-      number: '11',
+      number: '12',
       count: 120,
     },
     {
@@ -144,31 +144,94 @@ export class MainComponent {
       title: 'البيئة التعليمية',
       // subtitle: 'توثيق التفاعل بين المدرسة والمعلمة',
       subtitle: ['البيئة', 'التعليمية', 'لبرنامج', 'صعوبات', 'التعلم'],
-      number: '12',
+      number: '13',
+      count: 120,
+    },
+    {
+      img: 'image7.png',
+      color: '#ECE09E',
+      indexColor: '#F1DA07',
+      title: 'السلوك',
+      subtitle: ['السلوك', ' تعديل'],
+      number: '14',
+      count: 120,
+    },
+    {
+      img: 'image3.png',
+      color: '#C7C3E2',
+      indexColor: '#685EA4',
+      title: 'الجدول المدرسي',
+      subtitle: [ 'الجدول', 'المدرسي' ,'برنامج' ,'صعوبات' ,'التعلم'],
+      number: '15',
+      count: 120,
+    },
+
+    {
+      img: 'image5.png',
+      color: '#E2C3E1',
+      indexColor: '#956293',
+      title: 'أسماء الطالبات',
+      // subtitle: 'توثيق التفاعل بين المدرسة والمعلمة',
+      subtitle: [ 'أسماء', 'طالبات' ,'برنامج' ,'صعوبات' ,'التعلم'],
+      number: '16',
+      count: 120,
+    },
+    {
+      img: 'image3.png',
+      color: '#C7C3E2',
+      indexColor: '#685EA4',
+      title: 'تصاميم انتاج المعلمة',
+      subtitle: ['تصاميم', 'انتاج', 'المعلمة'],
+      number: '17',
       count: 120,
     },
   ];
   dialog1 = false;
   openContent(numberOfImage: string) {
     if (numberOfImage === '00') this.downloadCv();
-    if (numberOfImage === '10') this.dialog1 = true;
-    if (numberOfImage === '09') this.router.navigate(['student-certification']);
-    if (numberOfImage === '06') this.router.navigate(['certifications']);
-    if (numberOfImage === '04') this.router.navigate(['activities']);
-    if (numberOfImage === '03') this.router.navigate(['attendance']);
-    if (numberOfImage === '07') this.router.navigate(['paparwork']);
-    if (numberOfImage === '07') this.router.navigate(['notes']);
-    if (numberOfImage === '08') this.router.navigate(['schoolxteacher']);
     if (numberOfImage === '01') this.dialog2 = true;
+    if (numberOfImage === '02') this.dialog1 = true;
+    if (numberOfImage === '03') this.router.navigate(['attendance']);
+    if (numberOfImage === '04') this.router.navigate(['paparwork']);
     if (numberOfImage === '05') this.router.navigate(['lessons']);
+    if (numberOfImage === '06') this.router.navigate(['certifications']);
+    if (numberOfImage === '07') this.router.navigate(['activities']);
+    if (numberOfImage === '08') this.router.navigate(['notes']);
+    if (numberOfImage === '09') this.router.navigate(['schoolxteacher']);
+    if (numberOfImage === '10') this.router.navigate(['student-certification']);
     if (numberOfImage === '11') this.router.navigate(['visits']);
-    if (numberOfImage === '11') this.router.navigate(['community-partnership']);
-    if (numberOfImage === '12') this.router.navigate(['disabilities-program']);
+    if (numberOfImage === '12') this.router.navigate(['community-partnership']);
+    if (numberOfImage === '13') this.router.navigate(['disabilities-program']);
+    if (numberOfImage === '14') this.router.navigate(['behavior-modification']);
+    if (numberOfImage === '15') this.downloadSchedule();
+    if (numberOfImage === '16') this.downloadStudentsName();
+    if (numberOfImage === '17') this.router.navigate(['teacher-designs']);
+
+
+    
   }
   downloadCv() {
     let link = document.createElement('a');
     link.setAttribute('type', 'hidden');
     link.href = 'assets/content/resume.pdf';
+    // link.download = 'khulood-cv.pdf';
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+  }
+  downloadSchedule() {
+    let link = document.createElement('a');
+    link.setAttribute('type', 'hidden');
+    link.href = 'assets/content/schedule.pdf';
+    // link.download = 'khulood-cv.pdf';
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+  }
+  downloadStudentsName() {
+    let link = document.createElement('a');
+    link.setAttribute('type', 'hidden');
+    link.href = 'assets/content/students-name.pdf';
     // link.download = 'khulood-cv.pdf';
     document.body.appendChild(link);
     link.click();
